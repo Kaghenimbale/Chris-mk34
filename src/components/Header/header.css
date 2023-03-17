@@ -1,0 +1,139 @@
+#header {
+  background-color: rgb(30, 30, 30);
+}
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--color-or);
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: none;
+}
+
+.btn {
+  background: var(--color-or);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  box-shadow: 0 0 6px var(--color-or);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* DESCRIPTION */
+
+.descriptions {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.description p {
+  color: darkgray;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.explore {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.explore a {
+  color: var(--color-or);
+  font-size: 1.2rem;
+  border-bottom: 3px solid var(--color-or);
+}
+
+.explore .icon {
+  font-size: 1.2rem;
+  color: var(--color-or);
+  border-bottom: 3px solid var(--color-or);
+}
+
+.list-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: darkgray;
+}
+
+.list-icons .icon {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(40, 40, 40);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-soft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.myExperience {
+  background: var(--color-or);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 4px 4px 8px var(--color-or);
+}
+
+.experience-soft h2 {
+  color: white;
+}
+
+.experience-soft p {
+  color: darkgray;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.experience p {
+  width: 80%;
+  text-align: center;
+}

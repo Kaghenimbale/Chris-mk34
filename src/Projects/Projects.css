@@ -1,0 +1,92 @@
+#projects {
+  background: rgb(30, 30, 30);
+  padding: 1rem;
+}
+
+.myprojects {
+  display: grid;
+  gap: 1rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: rgb(50, 50, 50);
+  padding: 1rem;
+  box-shadow: 0 0 20px rgb(50, 50, 50);
+}
+
+.project-image {
+  width: 85vw;
+}
+
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-description {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.description-1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.languages {
+  display: flex;
+  gap: 1rem;
+} 
+
+.description-1 p {
+  color: darkgray;
+  padding: 0.5rem;
+  background: rgb(30, 30, 30);
+  box-shadow: 0 0 10px rgb(50, 50, 50);
+}
+
+.description-2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-btn span {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  color: var(--color-or);
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-or);
+}
+
+.project-btn .icon {
+  color: var(--color-or);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 3px solid var(--color-or);
+}
+
+.second {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.second h4 {
+  white-space: nowrap;
+}
+
+.second p {
+  white-space: nowrap;
+}
