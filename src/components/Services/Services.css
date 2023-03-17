@@ -1,0 +1,35 @@
+#services {
+  background: rgb(10, 10, 10);
+  padding: 1rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.service {
+  background: rgba(40, 40, 40);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(40, 40, 40);
+}
+
+.service .icon {
+  color: var(--color-or);
+  font-size: 2.5rem;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+}
+
+.service p {
+  color: darkgray;
+  text-align: start;
+  line-height: 1.5;
+}
