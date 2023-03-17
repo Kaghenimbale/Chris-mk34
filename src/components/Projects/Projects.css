@@ -1,10 +1,11 @@
 #projects {
   background: rgb(30, 30, 30);
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .myprojects {
   display: grid;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .project-description {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -34,13 +35,13 @@
 
 .description-1 {
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .languages {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 } 
 
@@ -49,6 +50,7 @@
   padding: 0.5rem;
   background: rgb(30, 30, 30);
   box-shadow: 0 0 10px rgb(50, 50, 50);
+  border-radius: 5px;
 }
 
 .description-2 {
@@ -67,13 +69,6 @@
   white-space: nowrap;
   font-size: 1.1rem;
   color: var(--color-or);
-  font-weight: 600;
-  border-bottom: 3px solid var(--color-or);
-}
-
-.project-btn .icon {
-  color: var(--color-or);
-  font-size: 1.2rem;
   font-weight: 600;
   border-bottom: 3px solid var(--color-or);
 }
