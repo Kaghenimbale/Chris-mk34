@@ -1,0 +1,21 @@
+footer {
+  background: rgb(30, 30, 30);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer p span {
+  font-size: 1.5rem;
+}
+
+footer small {
+  color: var(--color-or);
+}

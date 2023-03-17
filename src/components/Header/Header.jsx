@@ -47,16 +47,16 @@ const Header = () => {
 
           <div className="social">
             <ul className="list-icons">
-              <a href="#me">
+              <a href="#https://github.com/Kaghenimbale">
                 <AiOutlineGithub className="icon" />
               </a>
-              <a href="#me">
+              <a href="#https://www.linkedin.com/in/kagheni-mbale-401b90240/">
                 <BsLinkedin className="icon" />
               </a>
-              <a href="#me">
+              <a href="#https://twitter.com/MbaleKagheni">
                 <BsTwitter className="icon" />
               </a>
-              <a href="#me">
+              <a href="#https://www.instagram.com/kagheni_chris/">
                 <BsInstagram className="icon" />
               </a>
             </ul>
