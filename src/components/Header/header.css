@@ -13,6 +13,10 @@
   color: var(--color-or);
 }
 
+.icon-btn {
+  font-size: 1.6rem;
+}
+
 #nav-bar {
   display: flex;
   align-items: center;
