@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import img1 from '../images/img1.jpg';
+import img1 from '../../images/img1.jpg';
 
 const Projects = () => {
   return (
@@ -25,7 +25,7 @@ const Projects = () => {
                     </div>
                     <div className="description-2">
                         <div className="second">
-                          <h4>Design by Chris</h4>
+                          {/* <h4>Design by Chris</h4> */}
                           <p>Web App</p>
                         </div>
                         <button className='btn' href='me'>
@@ -52,7 +52,7 @@ const Projects = () => {
                     </div>
                     <div className="description-2">
                         <div className="second">
-                          <h4>Design by Chris</h4>
+                          {/* <h4>Design by Chris</h4> */}
                           <p>Web App</p>
                         </div>
                         <button className='btn' href='me'>
