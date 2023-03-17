@@ -1,11 +1,12 @@
-import './App.css';
-import Header from './components/Header/Header.jsx';
-import About from './components/About/About.jsx';
-import Services from './components/Services/Services.jsx';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import "./App.css";
+import Header from "./components/Header/Header.jsx";
+import About from "./components/About/About.jsx";
+import Services from "./components/Services/Services.jsx";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
-import React from 'react'
+import React from "react";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
