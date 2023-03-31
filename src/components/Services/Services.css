@@ -1,6 +1,6 @@
 #services {
   background: rgb(10, 10, 10);
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 
 .services-container {
@@ -32,4 +32,13 @@
   color: darkgray;
   text-align: start;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+  }
 }

@@ -6,6 +6,7 @@
 .contact {
   display: grid;
   gap: 1rem;
+  padding: 0 2rem;
 }
 
 .contact-card {
@@ -93,4 +94,40 @@ label {
 
 .Submit-btn {
   padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #contact {
+    padding: 2rem 3rem;
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: 20% 60%;
+    justify-content: space-between;
+  }
+
+  .input {
+    width: 30vw;
+  }
+
+  label {
+    justify-content: flex-start;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    padding: 0;
+  }
+
+  .Submit-btn {
+    padding: 0;
+  }
+
+  .input-message {
+    width: 60vw;
+    height: 40vh;
+    border-radius: 8px;
+  }
 }

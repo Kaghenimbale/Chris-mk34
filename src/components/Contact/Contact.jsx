@@ -1,9 +1,9 @@
-import React from "react";
-import "./Contact.css";
-import { BsWhatsapp } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { BsFillSendFill } from "react-icons/bs";
+import React from 'react';
+import './Contact.css';
+import { BsWhatsapp } from 'react-icons/bs';
+import { HiOutlineMail } from 'react-icons/hi';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
+import { BsFillSendFill } from 'react-icons/bs';
 
 const Contact = () => {
   return (
@@ -91,7 +91,7 @@ const Contact = () => {
 
             <div className="Submit-btn">
               <button type="submit" className="btn btn-submit">
-                <small>Send Your Message</small>
+                <small>Send Message</small>
                 <BsFillSendFill />
               </button>
             </div>

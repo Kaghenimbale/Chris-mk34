@@ -1,12 +1,19 @@
 #about {
   background: rgb(10, 10, 10);
-  padding: 2rem 1rem;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .job h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1rem 0;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .job p {
@@ -14,14 +21,17 @@
   font-size: 1.2rem;
   padding: 1rem 0;
   font-weight: 600;
+  text-align: center;
 }
 
 .cards {
   display: grid;
   gap: 1rem;
+  justify-content: center;
 }
 
 .card {
+  width: 70vw;
   background: rgb(30, 30, 30);
   padding: 2rem 1rem;
   border-radius: 10px;
@@ -51,4 +61,23 @@
   font-weight: 300;
 }
 
+@media screen and (min-width: 768px) {
+  .resume {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .card {
+    width: 30vw;
+    height: 20vh;
+  }
+  .job p {
+    text-align: start;
+  }
+}

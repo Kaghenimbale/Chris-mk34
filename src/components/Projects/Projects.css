@@ -17,10 +17,6 @@
   box-shadow: 0 0 20px rgb(50, 50, 50);
 }
 
-.project-image {
-  width: 85vw;
-}
-
 .project-image img {
   width: 100%;
   object-fit: cover;
@@ -43,7 +39,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-} 
+}
 
 .description-1 p {
   color: darkgray;
@@ -84,4 +80,25 @@
 
 .second p {
   white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .myprojects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+  }
+
+  .project {
+    align-items: center;
+  }
+
+  .description-1 {
+    gap: 1rem;
+  }
+
+  .project-image {
+    width: fit-content;
+  }
 }
