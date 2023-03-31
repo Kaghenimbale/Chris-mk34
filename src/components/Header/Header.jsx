@@ -1,11 +1,11 @@
-import React from "react";
-import "./header.css";
-import { AiOutlineGithub } from "react-icons/ai";
-import { BsLinkedin } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { ImArrowRight2 } from "react-icons/im";
-import { CgMenuRightAlt } from "react-icons/cg";
+import React from 'react';
+import './header.css';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { ImArrowRight2 } from 'react-icons/im';
+import { CgMenuRightAlt } from 'react-icons/cg';
 
 const Header = () => {
   return (
@@ -25,9 +25,11 @@ const Header = () => {
           <li className="navlink">Services</li>
         </ul>
 
-        <a href="#cv" className="btn">
-          <CgMenuRightAlt className="icon-btn" />
-        </a>
+        <button className="btn">
+          <a href="#cv">
+            <CgMenuRightAlt className="icon-btn" />
+          </a>
+        </button>
       </nav>
 
       <div className="descriptions">
