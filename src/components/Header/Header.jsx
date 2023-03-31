@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
@@ -6,10 +6,30 @@ import { BsTwitter } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { ImArrowRight2 } from 'react-icons/im';
 import { CgMenuRightAlt } from 'react-icons/cg';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Header = () => {
+  const navList = ['Home', 'About Me', 'Projects', 'Contact Me', 'Services'];
+  const [nav, setNavBar] = useState(true);
+
+  const renderNavBar = () => (nav ? setNavBar(false) : setNavBar(true));
+
   return (
     <header id="header">
+      <div className={nav ? 'navLists' : ''}>
+        <ul className="nav-links">
+          <button className="close" onClick={renderNavBar}>
+            <AiOutlineClose className="closeIcon" />
+          </button>
+          {navList.map((list) => {
+            return (
+              <li className="navLink">
+                <a href="Chris">{list}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
       <nav id="nav-bar">
         <div className="logo">
           <a href="#header">
@@ -17,15 +37,7 @@ const Header = () => {
           </a>
         </div>
 
-        <ul className="nav-links">
-          <li className="navlink">Home</li>
-          <li className="navlink">About Me</li>
-          <li className="navlink">Projects</li>
-          <li className="navlink">Contact Me</li>
-          <li className="navlink">Services</li>
-        </ul>
-
-        <button className="btn">
+        <button className="btn" onClick={renderNavBar}>
           <a href="#cv">
             <CgMenuRightAlt className="icon-btn" />
           </a>
