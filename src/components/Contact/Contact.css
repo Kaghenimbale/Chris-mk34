@@ -51,6 +51,7 @@ label {
   font-size: 1.2rem;
   background: rgb(0, 0, 0);
   border: none;
+  outline: none;
 }
 
 .input::placeholder {
@@ -63,8 +64,10 @@ label {
   width: 78vw;
   padding: 0.5rem 0.5rem 8rem;
   background: rgb(0, 0, 0);
-  color: darkgray;
+  color: whitesmoke;
   border: none;
+  outline: none;
+  font-size: 1.2rem;
 }
 
 .input-message::placeholder {
@@ -108,7 +111,7 @@ label {
   }
 
   .input {
-    width: 30vw;
+    width: 25vw;
   }
 
   label {
@@ -126,8 +129,9 @@ label {
   }
 
   .input-message {
-    width: 60vw;
-    height: 40vh;
+    width: 55vw;
+    height: 30vh;
     border-radius: 8px;
+    padding: 1rem;
   }
 }
