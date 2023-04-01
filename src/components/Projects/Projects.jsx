@@ -25,7 +25,6 @@ const Projects = () => {
             </div>
             <div className="description-2">
               <div className="second">
-                {/* <h4>Design by Chris</h4> */}
                 <p>Web App</p>
               </div>
               <button className="btn" href="me">
@@ -52,7 +51,6 @@ const Projects = () => {
             </div>
             <div className="description-2">
               <div className="second">
-                {/* <h4>Design by Chris</h4> */}
                 <p>Web App</p>
               </div>
               <button className="btn" href="me">

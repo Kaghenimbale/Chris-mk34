@@ -17,8 +17,13 @@
   font-size: 1.6rem;
   color: white;
 }
+.profile {
+  color: white;
+  text-align: center;
+}
 
 #nav-bar {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -181,4 +186,44 @@
 .experience p {
   width: 80%;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 5rem 5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .social {
+    margin-top: 2rem;
+  }
+
+  .description .btn {
+    margin-top: 2rem;
+  }
+
+  .description {
+    align-items: flex-start;
+  }
+
+  .experience-soft {
+    flex-direction: row;
+  }
+
+  .experience {
+    align-items: flex-start;
+  }
+
+  .experience p {
+    text-align: start;
+  }
+  .description p {
+    text-align: start;
+  }
+
+  .experiences {
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
 }
