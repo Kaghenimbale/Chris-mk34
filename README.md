@@ -72,7 +72,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 - cd my-folder
-- git clone [here](https://github.com/Kaghenimbale/math-magician.git)
+- git clone [here](https://github.com/Kaghenimbale/Chris-mk34.git)
 
 ### Install
 
