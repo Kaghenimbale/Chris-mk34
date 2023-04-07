@@ -230,4 +230,23 @@
   .menuBtn {
     display: none;
   }
+
+  .close {
+    display: none;
+  }
+
+  .navLists {
+    display: initial;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    background-color: transparent;
+  }
+
+  .navLink a {
+    color: darkgray;
+  }
 }
