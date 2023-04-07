@@ -39,23 +39,25 @@ const Projects = () => {
             <img src={img1} alt="Project1" />
           </div>
 
-          <div className="project-description">
-            <div className="description-1">
-              <h3>Awesome Books</h3>
+          <div>
+            <div className="project-description">
+              <div className="description-1">
+                <h3>Awesome Books</h3>
 
-              <div className="languages">
-                <p>Html</p>
-                <p>CSS</p>
-                <p>Javascript</p>
+                <div className="languages">
+                  <p>Html</p>
+                  <p>CSS</p>
+                  <p>Javascript</p>
+                </div>
               </div>
-            </div>
-            <div className="description-2">
-              <div className="second">
-                <p>Web App</p>
+              <div className="description-2">
+                <div className="second">
+                  <p>Web App</p>
+                </div>
+                <button className="btn" href="me">
+                  <span>View More</span>
+                </button>
               </div>
-              <button className="btn" href="me">
-                <span>View More</span>
-              </button>
             </div>
           </div>
         </div>

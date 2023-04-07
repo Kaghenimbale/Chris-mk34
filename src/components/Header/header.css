@@ -91,7 +91,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .description {
@@ -225,5 +225,9 @@
   .experiences {
     align-items: flex-start;
     padding-top: 2rem;
+  }
+
+  .menuBtn {
+    display: none;
   }
 }
