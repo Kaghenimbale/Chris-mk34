@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -61,7 +61,7 @@ const Contact = () => {
               <label htmlFor="email">
                 <input
                   type="email"
-                  name="username"
+                  name="email"
                   id="name"
                   className="input"
                   required
@@ -71,8 +71,8 @@ const Contact = () => {
 
               <label htmlFor="subject">
                 <input
-                  type=""
-                  name="username"
+                  type="text"
+                  name="subject"
                   id="name"
                   className="input"
                   required
@@ -82,6 +82,7 @@ const Contact = () => {
             </div>
             <label htmlFor="message">
               <textarea
+                type="text"
                 name="message"
                 id="message"
                 className="input-message"

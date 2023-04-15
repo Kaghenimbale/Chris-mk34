@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './header.css';
-import { AiOutlineGithub } from 'react-icons/ai';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
 import { ImArrowRight2 } from 'react-icons/im';
 import { CgMenuRightAlt } from 'react-icons/cg';
 import { AiOutlineClose } from 'react-icons/ai';
+import { HashLink as Link } from 'react-router-hash-link';
+import Social from '../common/Social';
 
 const Header = () => {
-  const navList = ['Home', 'About Me', 'Projects', 'Contact Me', 'Services'];
+  const navList = ['Home', 'Services', 'Projects', 'About', 'Contact'];
   const [nav, setNavBar] = useState(true);
 
   const renderNavBar = () => (nav ? setNavBar(false) : setNavBar(true));
@@ -18,9 +16,9 @@ const Header = () => {
     <header id="header">
       <nav id="nav-bar">
         <div className="logo">
-          <a href="#header">
+          <Link to="#header" smooth>
             Chris-<span>MK34</span>
-          </a>
+          </Link>
         </div>
 
         <div className={nav ? 'navLists' : ''}>
@@ -31,7 +29,16 @@ const Header = () => {
             {navList.map((list) => {
               return (
                 <li className="navLink">
-                  <a href="Chris">{list}</a>
+                  <Link
+                    to={`#${
+                      list.toLowerCase() === 'home'
+                        ? 'header'
+                        : list.toLowerCase()
+                    }`}
+                    smooth
+                  >
+                    {list}
+                  </Link>
                 </li>
               );
             })}
@@ -61,23 +68,11 @@ const Header = () => {
               <ImArrowRight2 className="icon" />
             </div>
 
-            <div className="social">
-              <ul className="list-icons">
-                <a href="#https://github.com/Kaghenimbale">
-                  <AiOutlineGithub className="icon" />
-                </a>
-                <a href="#https://www.linkedin.com/in/kagheni-mbale-401b90240/">
-                  <BsLinkedin className="icon" />
-                </a>
-                <a href="#https://twitter.com/MbaleKagheni">
-                  <BsTwitter className="icon" />
-                </a>
-                <a href="#https://www.instagram.com/kagheni_chris/">
-                  <BsInstagram className="icon" />
-                </a>
-              </ul>
-            </div>
-            <a href="#cv" className="btn">
+            <Social />
+            <a
+              href="https://drive.google.com/file/d/1lF5mlWIgQE6glZKFM5jwYoS018vINSiw/view?usp=sharing"
+              className="btn"
+            >
               Download CV
             </a>
           </div>
