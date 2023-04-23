@@ -23,12 +23,12 @@ const Header = () => {
 
         <div className={nav ? 'navLists' : ''}>
           <ul className="nav-links">
-            <button className="close" onClick={renderNavBar}>
+            <button className="close btn" onClick={renderNavBar}>
               <AiOutlineClose className="closeIcon" />
             </button>
             {navList.map((list) => {
               return (
-                <li className="navLink">
+                <li className="navLink" key={list}>
                   <Link
                     to={`#${
                       list.toLowerCase() === 'home'
