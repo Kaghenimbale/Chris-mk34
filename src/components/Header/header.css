@@ -240,28 +240,4 @@
   .menuBtn {
     display: initial;
   }
-
-  .close {
-    display: none;
-  }
-
-  .navLists {
-    display: initial;
-    border: none;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    position: initial;
-    background-color: transparent;
-  }
-
-  .navLink a {
-    color: darkgray;
-  }
-
-  .navLink {
-    display: none;
-  }
 }
