@@ -6,18 +6,23 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import React from 'react';
+import { React, createContext } from 'react';
+import { projects } from './components/Projects/Projects';
+
+export const ProjectContext = createContext();
 
 const App = () => {
   return (
-    <Router>
-      <Header />
-      <Services />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </Router>
+    <ProjectContext.Provider value={{ projects }}>
+      <Router>
+        <Header />
+        <Services />
+        <Projects />
+        <About />
+        <Contact />
+        <Footer />
+      </Router>
+    </ProjectContext.Provider>
   );
 };
 

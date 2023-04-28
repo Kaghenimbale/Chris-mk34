@@ -57,6 +57,12 @@ export const projects = [
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [id, setId] = useState(0);
+
+  const handleClick = (id) => {
+    setIsOpen(!isOpen);
+    setId(id);
+  };
 
   return (
     <section id="projects">
@@ -84,16 +90,11 @@ const Projects = () => {
                   <div className="second">
                     <p>{item.type}</p>
                   </div>
-                  <button
-                    className="btn"
-                    onClick={() => {
-                      setIsOpen(true);
-                    }}
-                  >
+                  <button className="btn" onClick={() => handleClick(item.id)}>
                     <span>View More</span>
                   </button>
                   {isOpen && (
-                    <ProjectDetail closeModal={setIsOpen} currentItem={item} />
+                    <ProjectDetail closeModal={setIsOpen} currentItemId={id} />
                   )}
                 </div>
               </div>

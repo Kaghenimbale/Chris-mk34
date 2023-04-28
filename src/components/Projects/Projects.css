@@ -102,6 +102,49 @@
   right: 2rem;
 }
 
+.modalImage {
+  width: 90vw;
+}
+
+.modalImage img {
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  color: white;
+}
+
+.techModal {
+  font-size: 1.2rem;
+  color: darkgray;
+  padding: 0.5rem;
+  background: black;
+  box-shadow: 0 0 10px rgb(50, 50, 50);
+  border-radius: 5px;
+}
+
+.buttonModal {
+  background: var(--color-or);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  box-shadow: 0 0 6px var(--color-or);
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .myprojects {
     display: grid;
