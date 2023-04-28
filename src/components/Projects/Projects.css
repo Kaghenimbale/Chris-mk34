@@ -168,4 +168,8 @@
   .project-image {
     width: fit-content;
   }
+
+  .modalImage {
+    width: 60vw;
+  }
 }

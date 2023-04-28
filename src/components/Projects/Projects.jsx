@@ -64,6 +64,10 @@ const Projects = () => {
     setId(id);
   };
 
+  isOpen
+    ? (document.body.style.overflow = 'hidden')
+    : (document.body.style.overflow = 'scroll');
+
   return (
     <section id="projects">
       <h2>My Projects</h2>

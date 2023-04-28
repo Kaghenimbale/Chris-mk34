@@ -12,6 +12,10 @@ const Header = () => {
 
   const renderNavBar = () => (nav ? setNavBar(false) : setNavBar(true));
 
+  nav
+    ? (document.body.style.overflow = 'scroll')
+    : (document.body.style.overflow = 'hidden');
+
   return (
     <header id="header">
       <nav id="nav-bar">

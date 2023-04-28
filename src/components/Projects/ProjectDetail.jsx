@@ -14,7 +14,7 @@ const ProjectDetail = ({ closeModal, currentItemId }) => {
         <div>
           {modalItem.map((item) => {
             return (
-              <div>
+              <div key={item.id}>
                 <div className="modalImage">
                   <img src={item.image} alt="PopUpImage" />
                 </div>
