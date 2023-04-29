@@ -16,7 +16,7 @@ const Footer = () => {
         <span>
           <small>Chris-MK34</small>
         </span>
-        @ 2023 All right are Preserved.
+        @2023 All right are Preserved.
       </p>
     </footer>
   );
