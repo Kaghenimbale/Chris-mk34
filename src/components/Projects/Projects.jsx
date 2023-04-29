@@ -5,6 +5,7 @@ import festival from '../../images/Festival.png';
 import jsportfolio from '../../images/JsPortfolio.png';
 import reacttodo from '../../images/ReactTodoList.png';
 import jstodo from '../../images/VanillaJsTodoList.png';
+import livescore from '../../images/livescore.png'
 import ProjectDetail from './ProjectDetail';
 
 export const projects = [
@@ -52,6 +53,15 @@ export const projects = [
     type: 'Web Application',
     source: 'https://github.com/Kaghenimbale/my-portfolio.git',
     liveDemo: 'https://kaghenimbale.github.io/my-portfolio/',
+  },
+  {
+    id: 6,
+    title: 'Football LiveScore',
+    technologies: ['React', 'CSS', 'Redux'],
+    image: `${livescore}`,
+    type: 'Web Application',
+    source: 'https://github.com/Kaghenimbale/metrics-webapp.git',
+    liveDemo: 'https://mylivescorefoot.netlify.app/',
   },
 ];
 
