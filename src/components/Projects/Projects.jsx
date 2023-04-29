@@ -64,9 +64,7 @@ const Projects = () => {
     setId(id);
   };
 
-  isOpen
-    ? (document.body.style.overflow = 'hidden')
-    : (document.body.style.overflow = 'scroll');
+  isOpen ? document.body.style.overflow = 'hidden': document.body.style.overflow = 'scroll';
 
   return (
     <section id="projects">
