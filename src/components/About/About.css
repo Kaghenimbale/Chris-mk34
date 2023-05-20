@@ -80,5 +80,7 @@
 
   .card p {
     text-align: start;
+    color: darkgray;
+    font-size: 1rem;
   }
 }
