@@ -32,7 +32,11 @@ const Header = () => {
             </button>
             {navList.map((list) => {
               return (
-                <li className="navLink" key={list}>
+                <li
+                  className="navLink"
+                  key={list}
+                  onClick={() => setNavBar(true)}
+                >
                   <Link
                     to={`#${
                       list.toLowerCase() === 'home'
