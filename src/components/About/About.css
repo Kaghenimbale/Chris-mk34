@@ -77,4 +77,8 @@
   .job {
     width: 40vw;
   }
+
+  .card p {
+    text-align: start;
+  }
 }
