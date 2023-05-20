@@ -65,7 +65,7 @@ const About = () => {
               </div>
               <p>
                 Spend 4 years studying and pacticing electrical installation
-                both in Domestic and Industrial Electrical Installations
+                both in Domestic and Industrial Electrical Installations.
               </p>
             </div>
           </div>
