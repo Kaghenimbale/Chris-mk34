@@ -12,7 +12,9 @@ const Header = () => {
 
   const renderNavBar = () => (nav ? setNavBar(false) : setNavBar(true));
 
-  nav? document.body.style.overflow = 'scroll' : document.body.style.overflow = 'hidden';
+  nav
+    ? (document.body.style.overflow = 'scroll')
+    : (document.body.style.overflow = 'hidden');
 
   return (
     <header id="header">
@@ -63,7 +65,7 @@ const Header = () => {
               from the Republic Democratic of Congo. I can help you build a
               product , feature or website Look through some of my work and
               experience! If you like what you see and have a project you need
-              coded, don’t hestiate to contact me.
+              coded, don’t hesitate to contact me.
             </p>
             <div className="explore">
               <a href="#me">Explore More</a>
