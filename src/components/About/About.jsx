@@ -1,5 +1,5 @@
-import React from "react";
-import "./About.css";
+import React from 'react';
+import './About.css';
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <div className="resume">
         <div className="job">
           <h3>Job Experience</h3>
-          <p>2010 - 2022</p>
+          <p>2018 - 2023</p>
 
           <div className="cards">
             <div className="card">
@@ -19,9 +19,10 @@ const About = () => {
                 <span>Prestech Sarl</span>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                aliquam adipisci non distinctio! Earum alias quisquam sequi,
-                tenetur repudiandae dignissimos?
+                Conducted electrical installations, including wiring, fixtures,
+                switches, and circuit breakers,... Performed routine maintenance
+                and repairs on electrical systems. Troubleshot electrical
+                problems.
               </p>
             </div>
 
@@ -31,9 +32,10 @@ const About = () => {
                 <span>Fidba Graphic</span>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                aliquam adipisci non distinctio! Earum alias quisquam sequi,
-                tenetur repudiandae dignissimos?
+                Build website in front-end web development (including HTML, CSS,
+                JavaScript, React, Git, and DS&A challenges) while building
+                multiple front-end projects both independently and via pair
+                programming.
               </p>
             </div>
           </div>
@@ -49,9 +51,10 @@ const About = () => {
                 <span>International University of Equator</span>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                aliquam adipisci non distinctio! Earum alias quisquam sequi,
-                tenetur repudiandae dignissimos?
+                Developed Windows Server Network Administration projects that
+                provided solutions to problems in network management (ADDS, DNS,
+                Group Policy, Application installation, and System
+                installation)...
               </p>
             </div>
 
@@ -61,9 +64,8 @@ const About = () => {
                 <span>I.T.Kyeshero</span>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                aliquam adipisci non distinctio! Earum alias quisquam sequi,
-                tenetur repudiandae dignissimos?
+                Spend 4 years studying and pacticing electrical installation
+                both in Domestic and Industrial Electrical Installations
               </p>
             </div>
           </div>
