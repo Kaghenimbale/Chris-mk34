@@ -111,7 +111,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="profile">My pic</div>
+        {/* <div className="profile">My pic</div> */}
       </div>
     </header>
   );
