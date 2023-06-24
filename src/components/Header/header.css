@@ -203,7 +203,6 @@
   width: 15rem;
   height: 15rem;
   position: absolute;
-  /* inset: 4px; */
   border: 6px solid black;
   z-index: 3;
   border-radius: 50%;
@@ -248,7 +247,7 @@
   content: '';
   position: absolute;
   inset: 6px;
-  background: #162052;
+  background: black;
   border-radius: 50%;
   z-index: 1;
 }
@@ -282,7 +281,20 @@
   }
 
   .box {
-    display: none;
+    grid-area: inherit;
+    margin: auto auto;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .profile {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .descriptions {
+    grid-area: inherit;
+    padding: 0;
   }
 
   .social {

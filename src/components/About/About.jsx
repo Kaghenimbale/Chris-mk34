@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section id="about">
       <h2>Years of Experience</h2>
       <p>My Resume</p>
 
       <div className="resume">
-        <div className="job">
+        <div className="job" data-aos="zoom-in">
           <h3>Job Experience</h3>
           <p>2018 - 2023</p>
 
@@ -40,7 +45,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="education job">
+        <div className="education job" data-aos="zoom-in">
           <h3>Education Experience</h3>
           <p>2010 - 2022</p>
 

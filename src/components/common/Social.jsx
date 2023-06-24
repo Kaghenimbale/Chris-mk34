@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Social = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
-      <div className="social">
+      <div className="social" data-aos="zoom-in">
         <ul className="list-icons">
           <a
             href="https://github.com/Kaghenimbale"

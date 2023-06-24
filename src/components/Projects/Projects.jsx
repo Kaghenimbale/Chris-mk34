@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Projects.css';
 import bookstore from '../../images/bookstore.png';
 import festival from '../../images/Festival.png';
 import jsportfolio from '../../images/JsPortfolio.png';
 import reacttodo from '../../images/ReactTodoList.png';
 import jstodo from '../../images/VanillaJsTodoList.png';
-import livescore from '../../images/livescore.png'
+import livescore from '../../images/livescore.png';
 import ProjectDetail from './ProjectDetail';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const projects = [
   {
@@ -66,6 +68,9 @@ export const projects = [
 ];
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   const [id, setId] = useState(0);
 
@@ -74,7 +79,9 @@ const Projects = () => {
     setId(id);
   };
 
-  isOpen ? document.body.style.overflow = 'hidden': document.body.style.overflow = 'scroll';
+  isOpen
+    ? (document.body.style.overflow = 'hidden')
+    : (document.body.style.overflow = 'scroll');
 
   return (
     <section id="projects">
@@ -84,7 +91,7 @@ const Projects = () => {
       <div className="myprojects">
         {projects.map((item) => {
           return (
-            <div className="project" key={item.id}>
+            <div className="project" data-aos="zoom-in" key={item.id}>
               <div className="project-image">
                 <img src={item.image} alt="Project1" />
               </div>

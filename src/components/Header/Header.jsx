@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
 import { ImArrowRight2 } from 'react-icons/im';
 import { CgMenuRightAlt } from 'react-icons/cg';
@@ -6,8 +6,13 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { HashLink as Link } from 'react-router-hash-link';
 import chris from '../../images/chris.jpg';
 import Social from '../common/Social';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const navList = ['Home', 'Services', 'Projects', 'About', 'Contact'];
   const [nav, setNavBar] = useState(true);
 
@@ -65,7 +70,7 @@ const Header = () => {
         <div className="descriptions">
           <div className="description">
             <h1>Kagheni Chris</h1>
-            <p>
+            <p data-aos="zoom-in-right">
               Hello, my name is Kagheni Mbale Chris. I am a front-End developer
               from the Republic Democratic of Congo. I can help you build a
               product , feature or website Look through some of my work and
@@ -77,7 +82,7 @@ const Header = () => {
               <ImArrowRight2 className="icon" />
             </div>
 
-            <Social />
+            <Social data-aos="zoom-in" />
             <a
               href="https://drive.google.com/file/d/1lF5mlWIgQE6glZKFM5jwYoS018vINSiw/view?usp=sharing"
               className="btn"
@@ -88,7 +93,7 @@ const Header = () => {
 
           <div className="experiences">
             <div className="experience-soft">
-              <div className="experience">
+              <div className="experience" data-aos="zoom-in">
                 <h2 className="myExperience">3+</h2>
                 <h2>Experience</h2>
                 <p>
@@ -96,7 +101,7 @@ const Header = () => {
                   years of Experience
                 </p>
               </div>
-              <div className="experience">
+              <div className="experience" data-aos="zoom-in">
                 <h2 className="myExperience">1k</h2>
                 <h2>Customers</h2>
                 <p>
@@ -112,7 +117,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="box">
+        <div className="box" data-aos="zoom-in">
           <div className="profile">
             <img src={chris} alt="chris" />
           </div>

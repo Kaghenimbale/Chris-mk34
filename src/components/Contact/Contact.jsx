@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css';
 import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { BsFillSendFill } from 'react-icons/bs';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log('clicked', event);
@@ -18,17 +23,17 @@ const Contact = () => {
 
       <div className="contacts">
         <div className="contact">
-          <div className="contact-card">
+          <div className="contact-card" data-aos="zoom-in">
             <BsWhatsapp className="icon" />
             <p>+243 977 813 248</p>
           </div>
 
-          <div className="contact-card">
+          <div className="contact-card" data-aos="zoom-in">
             <HiOutlineMail className="icon" />
             <p>kaghenimbale@gmail.com</p>
           </div>
 
-          <div className="contact-card">
+          <div className="contact-card" data-aos="zoom-in">
             <IoMdCheckmarkCircleOutline className="icon" />
             <p>Freelance available</p>
           </div>
@@ -39,6 +44,7 @@ const Contact = () => {
             action="https://formspree.io/f/xpzelgva"
             method="post"
             id="form"
+            data-aos="zoom-in"
           >
             <div className="inputs">
               <label htmlFor="name">
