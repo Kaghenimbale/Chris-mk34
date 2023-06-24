@@ -4,6 +4,7 @@ import { ImArrowRight2 } from 'react-icons/im';
 import { CgMenuRightAlt } from 'react-icons/cg';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HashLink as Link } from 'react-router-hash-link';
+import chris from '../../images/chris.jpg';
 import Social from '../common/Social';
 
 const Header = () => {
@@ -111,7 +112,11 @@ const Header = () => {
             </div>
           </div>
         </div>
-        {/* <div className="profile">My pic</div> */}
+        <div className="box">
+          <div className="profile">
+            <img src={chris} alt="chris" />
+          </div>
+        </div>
       </div>
     </header>
   );

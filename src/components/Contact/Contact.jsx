@@ -6,6 +6,11 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { BsFillSendFill } from 'react-icons/bs';
 
 const Contact = () => {
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    console.log('clicked', event);
+    event.target.reset();
+  };
   return (
     <section id="contact">
       <h2>CONTACT</h2>
@@ -32,11 +37,11 @@ const Contact = () => {
         <div className="form-container">
           <form
             action="https://formspree.io/f/xpzelgva"
-            method="POST"
+            method="post"
             id="form"
           >
             <div className="inputs">
-              <label htmlFor="username">
+              <label htmlFor="name">
                 <input
                   type="text"
                   name="username"
@@ -47,7 +52,7 @@ const Contact = () => {
                 />
               </label>
 
-              <label htmlFor="usertel">
+              <label htmlFor="phone">
                 <input
                   type="tel"
                   name="usertel"
@@ -62,7 +67,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  id="name"
+                  id="email"
                   className="input"
                   required
                   placeholder="Enter Your Email"
@@ -73,7 +78,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
-                  id="name"
+                  id="subject"
                   className="input"
                   required
                   placeholder="Enter Your Subject"
@@ -82,7 +87,6 @@ const Contact = () => {
             </div>
             <label htmlFor="message">
               <textarea
-                type="text"
                 name="message"
                 id="message"
                 className="input-message"
@@ -91,7 +95,11 @@ const Contact = () => {
             </label>
 
             <div className="Submit-btn">
-              <button type="submit" className="btn btn-submit">
+              <button
+                type="submit"
+                onSubmit={() => handleFormSubmit}
+                className="btn btn-submit"
+              >
                 <small>Send Message</small>
                 <BsFillSendFill />
               </button>

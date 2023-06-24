@@ -26,10 +26,20 @@ const ProjectDetail = ({ closeModal, currentItemId }) => {
                     <p className="techModal">{item.technologies[2]}</p>
                   </div>
                   <div className="btn-container">
-                    <a href={item.liveDemo} className="buttonModal">
+                    <a
+                      href={item.liveDemo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="buttonModal"
+                    >
                       Live Demo
                     </a>
-                    <a href={item.source} className="buttonModal">
+                    <a
+                      href={item.source}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="buttonModal"
+                    >
                       <AiOutlineGithub className="icon" />
                     </a>
                   </div>

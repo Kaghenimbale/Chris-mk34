@@ -9,16 +9,32 @@ const Social = () => {
     <div>
       <div className="social">
         <ul className="list-icons">
-          <a href="https://github.com/Kaghenimbale">
+          <a
+            href="https://github.com/Kaghenimbale"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiOutlineGithub className="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/kagheni-mbale-401b90240/">
+          <a
+            href="https://www.linkedin.com/in/kagheni-mbale-401b90240/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsLinkedin className="icon" />
           </a>
-          <a href="https://twitter.com/MbaleKagheni">
+          <a
+            href="https://twitter.com/MbaleKagheni"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsTwitter className="icon" />
           </a>
-          <a href="https://www.instagram.com/kagheni_chris/">
+          <a
+            href="https://www.instagram.com/kagheni_chris/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsInstagram className="icon" />
           </a>
         </ul>
