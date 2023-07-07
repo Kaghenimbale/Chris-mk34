@@ -74,9 +74,9 @@ const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [id, setId] = useState(0);
 
-  const handleClick = (id) => {
+  const handleClick = (itemId) => {
     setIsOpen(!isOpen);
-    setId(id);
+    setId(itemId);
   };
 
   isOpen
@@ -109,17 +109,20 @@ const Projects = () => {
                   <div className="second">
                     <p>{item.type}</p>
                   </div>
-                  <button className="btn" onClick={() => handleClick(item.id)}>
-                    <span>View More</span>
+                  <button className="btn" onClick={() => handleClick(item.id)} 
+                    data-isopen={isOpen}
+                    data-id={id} 
+                  >
+                    View More
                   </button>
-                  {isOpen && (
-                    <ProjectDetail closeModal={setIsOpen} currentItemId={id} />
-                  )}
                 </div>
               </div>
             </div>
           );
         })}
+        {isOpen && (
+          <ProjectDetail id={id} isOpen={isOpen} setIsOpen={setIsOpen} />
+        )}
       </div>
     </section>
   );
