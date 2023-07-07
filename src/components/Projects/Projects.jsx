@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Projects.css';
 import bookstore from '../../images/bookstore.png';
 import festival from '../../images/Festival.png';

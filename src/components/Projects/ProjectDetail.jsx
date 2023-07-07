@@ -1,4 +1,3 @@
-import React from 'react';
 import './Projects.css';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { projects } from './Projects';

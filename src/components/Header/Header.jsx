@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './header.css';
 import { ImArrowRight2 } from 'react-icons/im';
 import { CgMenuRightAlt } from 'react-icons/cg';
