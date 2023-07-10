@@ -7,6 +7,7 @@ import reacttodo from '../../images/ReactTodoList.png';
 import jstodo from '../../images/VanillaJsTodoList.png';
 import livescore from '../../images/livescore.png';
 import ProjectDetail from './ProjectDetail';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -68,8 +69,27 @@ export const projects = [
 ];
 
 const Projects = () => {
+  const [numCardsPerSlide, setNumCardsPerSlide] = useState(4);
+  const [slide, setSlide] = useState(0);
   useEffect(() => {
     Aos.init();
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setNumCardsPerSlide(1);
+      } else if (window.innerWidth > 768 && window.innerWidth < 900) {
+        setNumCardsPerSlide(2);
+      } else if (window.innerWidth > 1156) {
+        setNumCardsPerSlide(3);
+      } else {
+        setNumCardsPerSlide(4);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
   const [isOpen, setIsOpen] = useState(false);
   const [id, setId] = useState(0);
@@ -89,7 +109,29 @@ const Projects = () => {
       <p>Recents Works</p>
 
       <div className="myprojects">
-        {projects.map((item) => {
+        <div className="btnarrows">
+          <button
+            className="arrow-btn"
+            onClick={() =>
+              setSlide((prevSlide) =>
+                prevSlide === 0 ? projects.length - 3 : prevSlide - 1,
+              )
+            }
+          >
+            <FaChevronLeft className="arrow" />
+          </button>
+          <button
+            className="arrow-btn"
+            onClick={() =>
+              setSlide((prevSlide) =>
+                prevSlide === projects.length - 3 ? 0 : prevSlide + 1,
+              )
+            }
+          >
+            <FaChevronRight className="arrow" />
+          </button>
+        </div>
+        {projects.slice(slide, slide + numCardsPerSlide).map((item) => {
           return (
             <div className="project" data-aos="zoom-in" key={item.id}>
               <div className="project-image">
@@ -109,9 +151,11 @@ const Projects = () => {
                   <div className="second">
                     <p>{item.type}</p>
                   </div>
-                  <button className="btn" onClick={() => handleClick(item.id)} 
+                  <button
+                    className="btn"
+                    onClick={() => handleClick(item.id)}
                     data-isopen={isOpen}
-                    data-id={id} 
+                    data-id={id}
                   >
                     View More
                   </button>

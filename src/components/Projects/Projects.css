@@ -5,8 +5,10 @@
 
 .myprojects {
   display: grid;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
+  position: relative;
 }
 
 .project {
@@ -149,8 +151,8 @@
 
 @media screen and (min-width: 768px) {
   .myprojects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
     padding: 5rem;
   }
@@ -174,4 +176,34 @@
   .modalImage {
     width: 35vw;
   }
+
+  .myprojects {
+    /* justify-content: space-between; */
+  }
+}
+
+.arrow-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 4;
+  background: var(--color-or);
+}
+
+.arrow {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.btnarrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 4;
+  position: absolute;
+  width: 90vw;
 }
