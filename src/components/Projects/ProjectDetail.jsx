@@ -1,13 +1,12 @@
-import React from 'react';
 import './Projects.css';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { projects } from './Projects';
 
-const ProjectDetail = ({ closeModal, currentItemId }) => {
-  const modalItem = projects.filter((item) => item.id === currentItemId);
+const ProjectDetail = (Props) => {
+  const modalItem = projects.filter((item) => item.id === Props.id);
   return (
     <div className="popup">
-      <button className="btn" onClick={() => closeModal(false)}>
+      <button className="btn" onClick={() => Props.setIsOpen(false)}>
         x
       </button>
       <div>

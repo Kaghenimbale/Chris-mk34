@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './Services.css';
 import { SlScreenDesktop } from 'react-icons/sl';
 import { SiAdminer } from 'react-icons/si';

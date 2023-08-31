@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Contact.css';
 import { BsWhatsapp } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -8,13 +8,35 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
   useEffect(() => {
     Aos.init();
   }, []);
+
+  const handleChange = (e) => {
+    setData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+    console.log(data);
+  };
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log('clicked', event);
-    event.target.reset();
+    setData({
+      name: '',
+      phone: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
   };
   return (
     <section id="contact">
@@ -50,9 +72,10 @@ const Contact = () => {
               <label htmlFor="name">
                 <input
                   type="text"
-                  name="username"
+                  name="name"
                   id="name"
                   className="input"
+                  onChange={handleChange}
                   required
                   placeholder="Enter Your Name"
                 />
@@ -61,9 +84,10 @@ const Contact = () => {
               <label htmlFor="phone">
                 <input
                   type="tel"
-                  name="usertel"
+                  name="phone"
                   id="phone"
                   className="input"
+                  onChange={handleChange}
                   required
                   placeholder="Enter Your Phone"
                 />
@@ -75,6 +99,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   className="input"
+                  onChange={handleChange}
                   required
                   placeholder="Enter Your Email"
                 />
@@ -86,6 +111,7 @@ const Contact = () => {
                   name="subject"
                   id="subject"
                   className="input"
+                  onChange={handleChange}
                   required
                   placeholder="Enter Your Subject"
                 />
@@ -95,6 +121,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 id="message"
+                onChange={handleChange}
                 className="input-message"
                 placeholder="Enter Your Message"
               ></textarea>
@@ -103,7 +130,7 @@ const Contact = () => {
             <div className="Submit-btn">
               <button
                 type="submit"
-                onSubmit={() => handleFormSubmit}
+                onSubmit={handleFormSubmit}
                 className="btn btn-submit"
               >
                 <small>Send Message</small>
