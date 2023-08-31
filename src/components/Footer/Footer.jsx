@@ -2,6 +2,7 @@ import './Footer.css';
 import Social from '../common/Social';
 
 const Footer = () => {
+  const year = new Date();
   return (
     <footer id="footer">
       <div className="logo">
@@ -15,7 +16,7 @@ const Footer = () => {
         <span>
           <small>Chris-MK34</small>
         </span>
-        @2023 All right are Preserved.
+        @{year.getFullYear()} All right are Preserved.
       </p>
     </footer>
   );
