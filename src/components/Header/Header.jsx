@@ -84,7 +84,9 @@ const Header = () => {
 
             <Social data-aos="zoom-in" />
             <a
-              href="https://drive.google.com/file/d/1lF5mlWIgQE6glZKFM5jwYoS018vINSiw/view?usp=sharing"
+              href="https://docs.google.com/document/d/16AFIBCZNeGRrFIlPfVNeKlcUZlyj3YGPa5n4z3HLVBI/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="btn"
             >
               Download CV

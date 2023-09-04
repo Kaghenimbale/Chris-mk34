@@ -6,7 +6,6 @@ import jsportfolio from '../../images/JsPortfolio.png';
 import reacttodo from '../../images/ReactTodoList.png';
 import jstodo from '../../images/VanillaJsTodoList.png';
 import livescore from '../../images/livescore.png';
-import budget from '../../images/budget.png';
 import ProjectDetail from './ProjectDetail';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Aos from 'aos';
@@ -66,15 +65,6 @@ export const projects = [
     type: 'Web Application',
     source: 'https://github.com/Kaghenimbale/metrics-webapp.git',
     liveDemo: 'https://mylivescorefoot.netlify.app/',
-  },
-  {
-    id: 7,
-    title: 'Budget App',
-    technologies: ['Ruby', 'Rails', 'Postgres SQL'],
-    image: `${budget}`,
-    type: 'Data Base',
-    source: 'https://github.com/Kaghenimbale/budget-app.git',
-    liveDemo: 'https://budget-app-n0v3.onrender.com',
   },
 ];
 
