@@ -159,6 +159,13 @@
 
   .project {
     border-radius: 5px;
+    width: 20rem;
+    transition: all 5s ease-in;
+  }
+
+  .project:hover {
+    cursor: pointer;
+    scale: 1.1;
   }
 
   .description-1 {

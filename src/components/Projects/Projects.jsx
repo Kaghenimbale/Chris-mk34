@@ -133,7 +133,7 @@ const Projects = () => {
         </div>
         {projects.slice(slide, slide + numCardsPerSlide).map((item) => {
           return (
-            <div className="project" data-aos="zoom-in" key={item.id}>
+            <div className="project" data-aos="zoom-out" key={item.id}>
               <div className="project-image">
                 <img src={item.image} alt="Project1" />
               </div>
