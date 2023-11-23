@@ -37,6 +37,7 @@ const Contact = () => {
       subject: '',
       message: '',
     });
+    event.preventDefault();
   };
   return (
     <section id="contact">
